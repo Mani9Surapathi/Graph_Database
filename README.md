@@ -7,15 +7,24 @@ To perform this analysis, we used the Yelp dataset from GitHub. Yelp Inc. is an 
 
 The steps involved were:
  
-# 1. Interpreting and reading the data.
+## 1. Interpreting and reading the data.
 
-## Data description:
+### Data description:
 
-1. User - User 
+1. User - User : The first and second column represents the node labels of entity users. The first column can be considered as source nodes, the second as target, and it can be inferred that a relationship exists between two users in same row.
 
+2. User - business : The first column represents user nodes, the second column represents business nodes, the third column can be inferred as the rating given by a user to respective business.
 
+The dat files were read as dataframes using Pandas Library.
 
+## 2. Data Pre-processing:
 
+As it can be observed that all the node labels of every entity are numericals, to distinguish one entity from another, prefixes were added to entities. 
 
+## 3. Creating Graph Database: Added nodes, edges, properties and relationships.
 
-2. Importing
+## 4. Calculated average difference between the ratings given to a business by two users who are related to each other.
+
+## 5. Insight: Observed that there were 198811 instances where two users related to each other gave a rating to same business. So, tested the hypothesis H0: mu = 0, H1: mu != 0; with sample size 198811.
+
+From above hypothesis testing, for a confidence level of 95% we fail to reject null hypothesis. Hence, we can conclude that users related to each other give similar rating to a business.
