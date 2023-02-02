@@ -27,4 +27,4 @@ As it can be observed that all the node labels of every entity are numericals, t
 
 ## 5. Insight: Observed that there were 198811 instances where two users related to each other gave a rating to same business. So, tested the hypothesis H0: mu = 0, H1: mu != 0; with sample size 198811.
 
-From above hypothesis testing, for a confidence level of 95% we fail to reject null hypothesis. Hence, we can conclude that users related to each other give similar rating to a business.
+## From above hypothesis testing, for a confidence level of 95% we fail to reject null hypothesis. Hence, we can conclude that users related to each other give similar rating to a business.
